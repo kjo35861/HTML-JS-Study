@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="http://localhost:8080/servlet_study_war_exploded/api/html/form" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="username">아이디</label>
+                <input type="text" id="username" name="username" autofocus placeholder="사용자이름을 입력하세요" required>
+            </div>
+            <div>
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" value="1234" placeholder="비밀번호" required>
+            </div>
+            <div>
+                <label for="student1">학생</label>
+                <input type="checkbox" id="student1" name="job1" value="학생">
+                <label for="teacher1">선생님</label>
+                <input type="checkbox" id="teacher1" name="job1" value="선생님" disabled>
+                <label for="developer1">개발자</label>
+                <input type="checkbox" id="developer1" name="job1" value="개발자">
+            </div>
+            <div>
+                <label for="student2">학생</label>
+                <input type="radio" id="student2" name="job2" value="학생">
+                <label for="teacher2">선생님</label>
+                <input type="radio" id="teacher2" name="job2" value="선생님">
+                <label for="developer2">개발자</label>
+                <input type="radio" id="developer2" name="job2" value="개발자">
+            </div>
+            <div>
+                <label for="profileFile">첨부파일</label>
+                <input type="file" id="prifileFile" name="profileFile">
+            </div>
+            <div>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div>
+                <select name="" id="">
+                    <optgroup label="선택목록1">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </optgroup>
+                    <optgroup label="선택목록2">
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <input type="text" list="nameList">
+                <datalist id="nameList">
+                    <option value="김준일"></option>
+                    <option value="박준일"></option>
+                    <option value="최준일"></option>
+                    <option value="이준일"></option>
+                </datalist>
+            </div>
+            <button type="submit">전송</button>
+            <button type="button" disabled>확인</button> 
+            <button type="button">열기</button>
+        </form>
+    </body>
+</html>

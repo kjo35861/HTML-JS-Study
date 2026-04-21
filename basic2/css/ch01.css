@@ -1,0 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+*{  /*전체 선택자 :: 모든 속성에게 적용*/
+    text-decoration: underline;
+}
+
+#title4 {   /*(#id명)*/
+    font-size: 40px;
+}
+
+.title4 {   /*클래스에 띄워쓰기로 구분하여 클래스 중첩 적용 가능 // title3 title4 적용시 :: font-size = 10px , color = pink , text-align = center 모두 적용*/
+    text-align: center;
+}
+
+.title3 {   /*(.클래스 명) 클래스 이름을 지정하여 사용가능, 선택자보다 우선순위 높음*/
+    font-size: 10px;
+    color: pink;
+}
+    /*공통 스타일을 클래스로 잡아주는게 좋음*/
