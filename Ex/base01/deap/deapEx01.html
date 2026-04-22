@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                max-width: 960px;
+                margin: auto;
+            }
+            div.mom {
+                font-size: 0;
+            }
+            .card {
+                display: inline-block;
+                width: 30%;
+                margin: 1.5%;
+                vertical-align: top;
+                box-sizing: border-box;
+                padding: 20px;
+                border: 1px solid #ddd;
+                font-size: medium;
+            }
+            .price {
+                color: red;
+                font-weight: bold;
+            }
+            /*부모에서 font-size: 0 적용 후
+            자식에 font-size를 복원 시키면 inline-block 으로 인해 생기는
+            작은 규격 공백 들을 없앨 수 있음*/
+        </style>
+    </head>
+    <body>
+        <div class="mom">
+            <div class="card">
+                <h3>상품평</h3>
+                <p>설명</p>
+                <span class="price">123123</span>
+            </div>
+            <div class="card">
+                <h3>상품평</h3>
+                <p>설명</p>
+                <span class="price">123123</span>
+            </div>
+            <div class="card">
+                <h3>상품평</h3>
+                <p>설명</p>
+                <span class="price">123123</span>
+            </div>
+            <div class="card">
+                <h3>상품평</h3>
+                <p>설명</p>
+                <span class="price">123123</span>
+            </div>
+            <div class="card">
+                <h3>상품평</h3>
+                <p>설명</p>
+                <span class="price">123123</span>
+            </div>
+            <div class="card">
+                <h3>상품평</h3>
+                <p>설명</p>
+                <span class="price">123123</span>
+            </div>
+        </div>
+    </body>
+</html>

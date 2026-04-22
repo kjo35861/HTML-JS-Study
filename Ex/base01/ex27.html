@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .sidebar, .main {
+                box-sizing: border-box;
+            }
+            .sidebar {
+                display: inline-block;
+                width: 200px;
+                background-color: #f0f0f0;
+                vertical-align: top;
+                padding: 20px;
+            }
+            .main {
+                display: inline-block;
+                width: calc(100% - 210px);
+                vertical-align: top;
+                padding: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="sidebar">사이드바</p>
+            <p class="main">메인</p>
+        </div>
+        
+    </body>
+</html>
