@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .box-a {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: content-box;  /* 기본값 */
+        }
+
+        .box-b {
+            width: 200px;
+            padding: 20px;
+            border: 5px solid black;
+            box-sizing: border-box;
+        }
+        
+        /*
+        - box-a의 실제 보이는 너비: 250*50px (계산 과정: 200+(20*2)+(5*2) / (20*2)+(5*2))
+        - box-b의 실제 보이는 너비: 200*50px (계산 과정: 200 / (20*2)+(5*2))
+        - 어느 것이 더 직관적인가? 이유는?
+            border-box // content-box는 직접 계산해서 원하는 사이즈로 조절해야함. border-box는 알아서 계산
+        */
+    </style>
+    <body>
+        <div class="box-a"></div>
+        <div class="box-b"></div>
+    </body>
+</html>
